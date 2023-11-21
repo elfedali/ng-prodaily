@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-register',
+  selector: "app-register",
   template: `
-    <p>
-      register works!
-    </p>
+    register works!
+    <div><a routerLink="/">Go home</a></div>
+    <div><a routerLink="/s/login">Go to login</a></div>
   `,
-  styles: [
-  ]
+  styles: [],
 })
-export class RegisterComponent {
-
-}
+export class RegisterComponent {}

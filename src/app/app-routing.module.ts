@@ -3,15 +3,15 @@ import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: "p",
+    path: "",
     loadChildren: () =>
       import("./layouts/page/page.module").then((m) => m.PageModule),
   },
-  {
-    path: "",
-    loadChildren: () =>
-      import("./layouts/default/default.module").then((m) => m.DefaultModule),
-  },
+  // {
+  //   path: "",
+  //   loadChildren: () =>
+  //     import("./layouts/default/default.module").then((m) => m.DefaultModule),
+  // },
   {
     path: "s",
     loadChildren: () =>

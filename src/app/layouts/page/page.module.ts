@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from "src/app/shared/shared.module";
 
-import { PageRoutingModule } from './page-routing.module';
-import { PageComponent } from './page.component';
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
 
+import { PageRoutingModule } from "./page-routing.module";
+import { PageComponent } from "./page.component";
 
 @NgModule({
-  declarations: [
-    PageComponent
-  ],
-  imports: [
-    CommonModule,
-    PageRoutingModule
-  ]
+  declarations: [PageComponent],
+  imports: [CommonModule, PageRoutingModule, SharedModule],
 })
-export class PageModule { }
+export class PageModule {}
